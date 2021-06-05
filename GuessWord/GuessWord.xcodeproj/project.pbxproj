@@ -11,6 +11,7 @@
 		864FDE0026631EAE0060FC87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864FDDFF26631EAE0060FC87 /* ContentView.swift */; };
 		864FDE0226631EC00060FC87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864FDE0126631EC00060FC87 /* Assets.xcassets */; };
 		864FDE0526631EC00060FC87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864FDE0426631EC00060FC87 /* Preview Assets.xcassets */; };
+		8668285C266AFF5A004D3B89 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8668285B266AFF5A004D3B89 /* constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		864FDE0126631EC00060FC87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		864FDE0426631EC00060FC87 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		864FDE0626631EC00060FC87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8668285B266AFF5A004D3B89 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				864FDE0126631EC00060FC87 /* Assets.xcassets */,
 				864FDE0626631EC00060FC87 /* Info.plist */,
 				864FDE0326631EC00060FC87 /* Preview Content */,
+				8668285B266AFF5A004D3B89 /* constants.swift */,
 			);
 			path = GuessWord;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				864FDE0026631EAE0060FC87 /* ContentView.swift in Sources */,
 				864FDDFE26631EAE0060FC87 /* GuessWordApp.swift in Sources */,
+				8668285C266AFF5A004D3B89 /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
