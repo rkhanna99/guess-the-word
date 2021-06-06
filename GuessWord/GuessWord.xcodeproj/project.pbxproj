@@ -11,15 +11,19 @@
 		864FDE0026631EAE0060FC87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864FDDFF26631EAE0060FC87 /* ContentView.swift */; };
 		864FDE0226631EC00060FC87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864FDE0126631EC00060FC87 /* Assets.xcassets */; };
 		864FDE0526631EC00060FC87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864FDE0426631EC00060FC87 /* Preview Assets.xcassets */; };
+		8C4B343515C21134D769D33D /* Pods_GuessWord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DC39EF935F214052E4445B /* Pods_GuessWord.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E2D41CBFFA0CC34FE49C17E /* Pods-GuessWord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessWord.release.xcconfig"; path = "Target Support Files/Pods-GuessWord/Pods-GuessWord.release.xcconfig"; sourceTree = "<group>"; };
+		55DC39EF935F214052E4445B /* Pods_GuessWord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuessWord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		864FDDFA26631EAE0060FC87 /* GuessWord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessWord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		864FDDFD26631EAE0060FC87 /* GuessWordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessWordApp.swift; sourceTree = "<group>"; };
 		864FDDFF26631EAE0060FC87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		864FDE0126631EC00060FC87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		864FDE0426631EC00060FC87 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		864FDE0626631EC00060FC87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3AA35DB792496A739BA1503 /* Pods-GuessWord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessWord.debug.xcconfig"; path = "Target Support Files/Pods-GuessWord/Pods-GuessWord.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +31,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C4B343515C21134D769D33D /* Pods_GuessWord.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		831C9915187E81F610F75B15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55DC39EF935F214052E4445B /* Pods_GuessWord.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		864FDDF126631EAE0060FC87 = {
 			isa = PBXGroup;
 			children = (
 				864FDDFC26631EAE0060FC87 /* GuessWord */,
 				864FDDFB26631EAE0060FC87 /* Products */,
+				F07DB81CEBAFFEE39661737E /* Pods */,
+				831C9915187E81F610F75B15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +84,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F07DB81CEBAFFEE39661737E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3AA35DB792496A739BA1503 /* Pods-GuessWord.debug.xcconfig */,
+				4E2D41CBFFA0CC34FE49C17E /* Pods-GuessWord.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 864FDE0926631EC00060FC87 /* Build configuration list for PBXNativeTarget "GuessWord" */;
 			buildPhases = (
+				5237B99EBEF6232E3EA8645B /* [CP] Check Pods Manifest.lock */,
 				864FDDF626631EAE0060FC87 /* Sources */,
 				864FDDF726631EAE0060FC87 /* Frameworks */,
 				864FDDF826631EAE0060FC87 /* Resources */,
+				41C2F0052EA0F4EE9847458B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41C2F0052EA0F4EE9847458B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuessWord/Pods-GuessWord-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuessWord/Pods-GuessWord-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GuessWord/Pods-GuessWord-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5237B99EBEF6232E3EA8645B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuessWord-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		864FDDF626631EAE0060FC87 /* Sources */ = {
@@ -264,6 +333,7 @@
 		};
 		864FDE0A26631EC00060FC87 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3AA35DB792496A739BA1503 /* Pods-GuessWord.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -285,6 +355,7 @@
 		};
 		864FDE0B26631EC00060FC87 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E2D41CBFFA0CC34FE49C17E /* Pods-GuessWord.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
