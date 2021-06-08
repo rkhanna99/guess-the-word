@@ -6,8 +6,15 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct ContentView: View {
+    
+    // Initialize Firebase
+    init() {
+            FirebaseApp.configure()
+    }
+    
     var body: some View {
         Text("Hello, world!")
             .padding()

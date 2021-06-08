@@ -6,11 +6,14 @@ target 'GuessWord' do
   use_frameworks!
 
   # Pods for GuessWord
+  pod 'Firebase/Analytics'
+  
   plugin 'cocoapods-keys', {
   :project => "GuessWord",
   :target => "GuessWord",
   :keys => [
-    "WordnikAPIKey"
+    "WordnikAPIKey",
+    "CorrectKey"
   ]
 }
 end
