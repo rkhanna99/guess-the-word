@@ -7,19 +7,30 @@
 
 import Foundation
 import Keys
+import FirebaseFirestore
+import FirebaseFirestoreSwift
 
 let keys = GuessWordKeys()
 let wordnik = keys.wordnikAPIKey
 
-// Format of the response for the random word API calls
-struct APIResponse {
-    var id: Int
+// Create the struct for each word in our game
+struct Word: Identifiable, Codable {
+    @DocumentID var id: String?
     var word: String
+    var definition: String
+    var difficulty: String
     
-    init(id: Int, word: String) {
-        self.id = id
+    init(id: String?, word: String, definition: String, difficulty: String) {
+        if let id = id {
+            self.id = id
+        }
         self.word = word
+        self.definition = definition
+        self.difficulty = difficulty
     }
+    
 }
+
+
 
 
