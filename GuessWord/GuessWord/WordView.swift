@@ -12,6 +12,8 @@ import SwiftUI
 struct WordView: View {
     // Get the firestore database
     private var db = Firestore.firestore()
+    
+    @State var wordList: [Word] = []
 
     func loadWords() {
         //let asyncBlock = DispatchGroup()
@@ -29,12 +31,32 @@ struct WordView: View {
                         print("Parse word failed")
                     }
                 }
+                print(placeholder)
+//                asyncBlock.leave()
+//                asyncBlock.notify(queue: .main) {
+//                    print(placeholder)
+//                    self.wordList = placeholder
+//                    print("Finished all requests.")
+//                }
             }
-            //asyncBlock.leave()
+            
+            
         }
+        
+
     }
     
     var body: some View {
-        Text("Words")
+        VStack {
+            Text("Testing")
+        }.onAppear(perform: {
+            loadWords()
+        })
+    }
+}
+
+struct WordView_Previews: PreviewProvider {
+    static var previews: some View {
+        WordView()
     }
 }

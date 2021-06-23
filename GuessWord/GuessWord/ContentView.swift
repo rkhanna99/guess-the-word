@@ -12,12 +12,13 @@ struct ContentView: View {
     
     // Initialize Firebase
     init() {
-            FirebaseApp.configure()
+        FirebaseApp.configure()
     }
     
     var body: some View {
         Text("Hello, world!")
             .padding()
+        WordView()
     }
 }
 
